@@ -1,3 +1,7 @@
+#This is an example of how the data structure allows you to write conditional statements
+#to filter data.  In this case, building a corpus from student essay only if they scored
+#over 40 on placement and use more than 300 types in their essay.
+
 import pickle
 import nltk
 
