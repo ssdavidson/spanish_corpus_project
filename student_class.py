@@ -1,3 +1,8 @@
+#This class definition sets a data member for a student object for
+#each field in our Excel spreadsheet.  Whenever possible, I tried to
+#convert strings into useful data types, such as int and float for
+#numbers, and booleans for columns which had binary options.
+
 class Student:
     'Class to contain each student\'s data'
 
