@@ -1,3 +1,8 @@
+#This program uses the Student class to import data from the Excel spreadsheet
+#and save the data as a list of Student objects which can then be used
+#for further analysis of the data.  Also, divides data into test and training
+#sets, and saved data sets to file.
+
 import openpyxl
 import pickle
 from student_class import Student
