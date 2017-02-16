@@ -7,7 +7,7 @@ student_train_list = pickle.load(open("student_train.set", "rb"))
 results_list = list()
 
 for item in student_train_list:
-    essay = len(nltk.word_tokenize(item.essay))
+    essay = len(set(nltk.word_tokenize(item.essay)))
     tup = (essay, item.placement_raw)
     results_list.append(tup)
 
