@@ -73,7 +73,6 @@ student_train_list = list()
 student_test_list = list()
 
 row_count = sheet.max_row
-column_count = sheet.max_column
 
 for i in range(2, row_count):
     student = Student()
