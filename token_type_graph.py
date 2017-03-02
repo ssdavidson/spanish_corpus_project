@@ -1,6 +1,6 @@
-# This is an example of using the student data to create graphs
+# This is another example of using the student data to create graphs
 # In this case, we are graphing the number of types used against
-# the student's placement score.
+# the number of tokens used.
 
 import pickle #used to load data
 from matplotlib import pyplot #used for graphing
@@ -13,14 +13,14 @@ x = list()
 y = list()
 
 # iterate through student trainging data.  For each student, add the student's
-# data types value to the x list, and placement score to the y list.
+# data tokens value to the x list, and types to the y list.
 for student in student_train_list:
-    x.append(student.types)
-    y.append(student.placement_raw)
+    x.append(student.tokens)
+    y.append(student.types)
 
 # build graph
 pyplot.title("number of types vs. placement score")
-pyplot.xlabel("number of types")
-pyplot.ylabel("placement score")
-pyplot.plot(x, y, 'g^') #this is a scatterplat, using green(g) triangles(^)
+pyplot.xlabel("number of tokens")
+pyplot.ylabel("number of types")
+pyplot.plot(x, y, 'ro') #this is a scatterplat, using green(r) circles(o)
 pyplot.show() #display graph

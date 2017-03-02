@@ -17,5 +17,9 @@ class Student:
         self.other_languages = False
         self.placement_raw = 0
         self.placement_percent = 0.0
+        self.placement_percentile = 0.0
+        self.tokens = 0
+        self.types = 0
         self.number_composition = 0
         self.essay = ''
+        self.data_set = ''
