@@ -24,7 +24,7 @@ student_list= list()
 # in the corresponding column for that row.  In addition, calculate tokens and
 # types and update the values of those attributes.
 row_count = sheet.max_row
-for i in range(2, row_count):
+for i in range(2, row_count+1):
     student = Student()
     student.sex = sheet.cell(row=i, column=4).value
     if sheet.cell(row=i, column=6).value != ' ' and sheet.cell(row=i, column=6).value != None:
@@ -35,9 +35,9 @@ for i in range(2, row_count):
         student.stay_spanish_country = True
     else: student.stay_spanish_country = False
     if sheet.cell(row=i, column=19).value != ' ' and sheet.cell(row=i, column=19).value != None:
-        student.age_started_spanish = int(sheet.cell(row=i, column=19).value)
+        student.age_started_spanish = float(sheet.cell(row=i, column=19).value)
     if sheet.cell(row=i, column=20).value != ' 'and sheet.cell(row=i, column=20).value != None:
-        student.years_studying_spanish = int(sheet.cell(row=i, column=20).value)
+        student.years_studying_spanish = float(sheet.cell(row=i, column=20).value)
     if sheet.cell(row=i, column=25).value == 'Yes':
         student.other_languages = True
     else: student.other_languages = False
