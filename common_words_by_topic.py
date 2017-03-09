@@ -26,8 +26,11 @@ def analyze_topic(topic_id, topic_id2=0, topic_id3=0, topic_id4=0):
             if fd_50[i][0] in words:
                 count_list[i] += 1
 
-    print("Word frequencies for topic", topic_id)
-    print('{:<10}'.format("word"), '{:<10}'.format("frequency"), "percent students")
+    print("Word frequencies for topic", topic_id, end="")
+    print("", topic_id2, end="") if topic_id2 else print()
+    if topic_id3: print("", topic_id3, end="")
+    if topic_id4: print("", topic_id4)
+    print('{:<11}'.format("Word"), '{:<10}'.format("Frequency"), "Percent students")
     for i in range(50):
         print('{:<11}'.format(str(fd_50[i][0])), '{:<10}'.format(str("%.5f" % (fd_50[i][1]/num_words))), "%.5f" % (count_list[i]/num_students))
     print()
