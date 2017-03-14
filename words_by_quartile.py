@@ -24,6 +24,7 @@ for student in student_list:
             result4 += (student.essay + ' ')
             count4 +=1
 
+print("Number of students in each placement score quartile")
 print(count1, count2, count3, count4)
 print()
 
@@ -32,12 +33,17 @@ def most_common(corpus):
     fd = nltk.FreqDist(words)
     num_words = len(words)
     fd_50 = fd.most_common(50)
-    return fd_50
+    words = [tup[0] for tup in fd_50]
+    return words
 
+print("50 most common words for 1st quartile students")
 print(most_common(result1))
 print()
+print("50 most common words for 2nd quartile students")
 print(most_common(result2))
 print()
+print("50 most common words for 3rd quartile students")
 print(most_common(result3))
 print()
+print("50 most common words for 4th quartile students")
 print(most_common(result4))
