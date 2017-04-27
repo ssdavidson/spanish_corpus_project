@@ -12,8 +12,8 @@ class Student:
         self.degree = ''
         self.native_language = ''
         self.stay_spanish_country = False
-        self.age_started_spanish = 0
-        self.years_studying_spanish = 0
+        self.age_started_spanish = 0.0
+        self.years_studying_spanish = 0.0
         self.other_languages = False
         self.placement_raw = 0
         self.placement_percent = 0.0
@@ -23,3 +23,4 @@ class Student:
         self.number_composition = 0
         self.essay = ''
         self.data_set = ''
+        self.tagged_words = []
