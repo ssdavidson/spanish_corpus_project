@@ -1,3 +1,5 @@
+# much of this code is the FreeLing project - https://github.com/TALP-UPC/FreeLing/blob/master/APIs/python/sample.py
+
 import freeling
 import sys
 import string
