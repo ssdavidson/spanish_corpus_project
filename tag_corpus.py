@@ -1,4 +1,4 @@
-# much of this code is the FreeLing project - https://github.com/TALP-UPC/FreeLing/blob/master/APIs/python/
+# much of this code is the FreeLing project - https://talp-upc.gitbooks.io/freeling-tutorial/content/code/example01.py.html
 
 import freeling
 import sys
