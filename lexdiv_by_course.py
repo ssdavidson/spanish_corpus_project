@@ -7,8 +7,6 @@ essays = list()
 essays_famous = list()
 essays_vacation = list()
 
-sys.setrecursionlimit(1500)
-
 with io.open('CORPUS_050718.csv', encoding = 'utf-8') as wb:
   csvreader = csv.reader(wb)
   for row in csvreader:
